@@ -1,0 +1,838 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    
+}
+:root{
+    --heading: rgb(0,10,45);
+    --para:#777777;
+    --para-tint: #e4e4e4;
+    --white:#fff;
+    --helper:#8490ff;
+    --helper-tint:#f3f4ff;
+    --bg:rgb(249,249,255);
+    --gradient :(0deg,rgb(132,144,255) 0%,rgb(98,189,252)100%);
+    --graeient-support: -webkit-linear-gradient(0deg,rgb(132,144,255)0%,rgb(98,189,252)100%);
+    --shadow :0px 0px 20px 0px rgb(132 144 255 / 20%);
+} 
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+
+}
+body{
+    overflow-x: hidden;
+}
+h1,h2,h3,h4{
+    font-family: 'Ubuntu', sans-serif;
+
+}
+h1{
+    color:var(--heading);
+    font-size: 6rem;
+    font-weight: 600;
+}
+h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+p{
+    color: var(--para);
+    line-height: 1.6;
+    font-size: 1.7rem;
+
+}
+
+a{
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+
+/* ------------>     YHA SE HEADER SECTION START HAI    <---------------- */
+/* ___________________________________________________________________________ */
+
+.header{
+    padding: 0 4.8rem;
+    height: 10rem;
+    background-color: var(--bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .logo{
+    height: 3rem;
+}
+.navbar-list{
+    display: flex;
+    gap: 5rem;
+    list-style: none;
+}
+.navbar-link:link,
+.navbar-link:visited{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #212529;
+    transition: color 0.3s linear;
+}
+.navbar-link:hover,
+.navbar-link:active{
+    color: var(--helper);
+}
+
+.mobile-navbar-btn{
+    display: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.mobile-nav-icon[name="close-outline"]{
+    display: none;
+}
+/*  --------> HERO SECTION OR MAIN LANDING PAGE YHA SE  */
+/*  ________________________________________________________ */
+
+.section{
+    padding: 9rem 0;
+
+}
+
+.p-btn1{
+    background: var(--graeient-support);
+    padding: 1.6rem 3.2rem;
+    border: none;
+    /* color:var(--helper-tint); */
+    color: red;
+    display: inline-block;
+
+}
+
+.p-btn2{
+    background: var(--graeient-support);
+    padding: 1.6rem 3.2rem;
+    border: none;
+    /* color:var(--helper-tint); */
+    color: red;
+    display: inline-block;
+
+}
+
+.p-btn3{
+    background: var(--graeient-support);
+    padding: 1.6rem 3.2rem;
+    border: none;
+    /* color:var(--helper-tint); */
+    color: red;
+    display: inline-block;
+
+}
+
+.p-btn4{
+    background: var(--graeient-support);
+    padding: 1.6rem 3.2rem;
+    border: none;
+    /* color:var(--helper-tint); */
+    color: red;
+    display: inline-block;
+
+}
+.grid{
+    display: grid;
+    gap: 9rem;
+
+}
+.grid-one-column{
+    grid-template-columns: repeat(1,1fr);
+}
+
+.grid-two-column{
+    grid-template-columns: repeat(2,1fr);
+
+}
+
+.grid-five-column{
+    grid-template-columns: repeat(5,1fr);
+
+}
+
+.grid-three-column{
+    grid-template-columns: repeat(3,1fr);
+
+}
+
+.grid-four-column{
+    grid-template-columns: repeat(4,1fr);
+
+}
+.section-hero{
+    background-color: var(--bg);
+}
+ .section-hero-data h1{
+    font-size: 10rem;
+    display: flex;
+    justify-content: center;
+    
+}
+.container{
+    max-width: 140rem;
+}
+.hero-image{
+    max-width: 90%;
+}
+
+.section-hero-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+/* ------>  ABOUT US SECTIO YHA SE -------> */
+/*        _________________________________ */
+
+.about-image img{
+    width: 90%;
+    box-shadow: -2rem -2rem 0 0 var(--helper);
+}
+.about-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#upEve{
+    margin-top:3rem;
+    margin-bottom: 3rem;
+}
+.common-heading{
+    font-size: 4.8rem;
+    font-weight: 600;
+    margin-top: 6rem;
+    text-transform: capitalize;
+    position: relative;
+}
+.common-heading1{
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 6rem;
+    display: flex;
+    justify-content: center;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.btn{
+    background: var(--graeient-support);
+
+    padding: 1.6rem 3.2rem;
+    border: none;
+    color:var(--helper-tint);
+    
+    display: inline-block;
+
+
+}
+/* -------> MEET OUR TEAM YHA SE CHALU H */
+/*         _______________________________ */
+
+.section-ourteam{
+    background : var(--bg);
+    transition: all 0.7 linear;
+    margin-left: 6rem;
+
+}
+.section-ourteam p{
+    max-width: 60rem;
+    margin-left: 5rem;
+    margin-bottom: 2rem;
+}
+
+.p-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.2rem;
+    margin-top: 6.4;
+    margin-bottom: 6rem;
+}
+.ourteamimages img{
+width: 100%;
+display: flex;
+justify-content: center;
+margin-left: 5rem;
+}
+
+
+#upEve{
+    font-size: 4rem;
+    margin-top: 6rem;
+}
+
+
+
+/*  OUR TEAM IMAGES  */
+
+
+.coleadPicPart1 {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+
+}
+
+#imagecolead1 {
+    height: 25rem;
+    width: 20rem;
+}
+
+#imagecolead2 {
+    height: 25rem;
+    width: 20rem;
+}
+
+#imagecolead3 {
+    height: 25rem;
+    width: 20rem;
+}
+
+#imagecolead4 {
+    height: 25rem;
+    width: 20rem;
+}
+
+#imagecolead5 {
+    height: 25rem;
+    width: 20rem;
+}
+
+.coleadP2 {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+
+}
+
+#imagecolead6 {
+    height: 25rem;
+    width: 20rem;
+}
+
+#imagecolead7 {
+
+    height: 25rem;
+    width: 20rem;
+
+}
+
+#imagecolead8 {
+    height: 25rem;
+    width: 20rem;
+}
+
+#imagecolead9 {
+    height: 25rem;
+    width: 20rem;
+}
+
+#imagecolead10 {
+    height: 25rem;
+    width: 20rem;
+}
+
+.developers{
+    display:flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+
+}
+
+#developer1{
+    height: 25rem;
+    width: 20rem;
+}
+
+#developer2{
+    height: 25rem;
+    width: 20rem;
+}
+
+#developer3{
+    height: 25rem;
+    width: 20rem;
+}
+
+#developer4{
+    height: 25rem;
+    width: 20rem;
+}
+
+#developer5{
+    height: 25rem;
+    width: 20rem;
+}
+.nameCOleader{
+    font-size: 1.5rem;
+}
+
+#imagec1 {
+    height: 35rem;
+    width: 25rem;
+}
+
+#imagec2 {
+    height: 35rem;
+    width: 25rem;
+}
+
+#imagec3 {
+    height: 35rem;
+    width: 25rem;
+}
+
+#imagec4 {
+    height: 35rem;
+    width: 25rem;
+}
+
+#imagec5 {
+    height: 35rem;
+    width: 25rem;
+}
+
+#imagec6 {
+    height: 35rem;
+    width: 25rem;
+}
+
+#imagec7 {
+    height: 35rem;
+    width: 25rem;
+}
+
+#imagec8 {
+    height: 35rem;
+    width: 25rem;
+}
+ 
+.Advisorsof {
+    display: flex;
+    justify-content: space-evenly;
+} 
+#Floatimage1{
+    height: 500px;
+    padding: 10px;
+    
+  }
+  
+  #Floatimage2{
+    height: 500px;
+  padding: 10px;
+  
+  }
+  #Floatimage3{
+    height: 500px;
+  padding: 10px;
+  
+  }
+  
+  .Floatimage{
+    display: flex;
+    justify-content: center; 
+    
+  } 
+  
+  #upComing{
+      display: flex;
+    justify-content: center; 
+    align-items: center;  
+    margin-top: 6rem;
+    font-size: 2.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+  }
+/*  FEED BACK PRTION START */
+/*  _____________________________ */
+
+
+  
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .swiper-client-msg{
+    padding: 5rem 8rem;
+    background:var(--white);
+    border-radius: 1rem;
+    text-align: left;
+    box-shadow: var(--shadow);
+    position: relative;
+  }
+  .swiper-client-msg::before{
+    content: " ";
+    position: absolute;
+    bottom: -10rem;
+    left: 50%;
+    border: 5rem solid var(--white);
+    border-color: transparent;
+    border-top-color: var(--helper-tint);
+    transform: translate(-50%);
+
+  }
+
+  .swiper-client-msg p::before{
+    content: "\f10d";
+    position: absolute;
+    top: 0;
+    left: 2rem;
+    font-size: 5rem;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #ced3ff;
+
+
+  }
+
+  .swiper-client-msg p::after{
+    content: "\f10e";
+    position: absolute;
+    bottom: 0;
+    right: 2rem;
+    font-size: 5rem;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #ced3ff;
+
+
+  }
+  .swiper-slide img{
+    max-width: 20rem; 
+     height: 10rem; 
+    border-radius: 50%;
+     /* border:.5rem solid var(--helper-tint); */
+  }
+  .swiper-client-data{
+    align-items: center;
+    margin-top: 3.2rem;
+    gap: 3rem;
+  }
+  #feedback{
+    margin-left: 15rem;
+  }
+
+
+
+  /*  FOOTER SECTION YHA SE  */
+  /*  _________________________ */
+  .section-footer{
+    background-color: var(--heading);
+    transition: all 0.7sec linear;
+
+  }
+  .section-footer h3{
+    color: var(--white);
+    margin-bottom: 4rem;
+  }
+  .f-about p{
+    color: #adadad;
+  }
+  .f-links ul,.f-services ul,.f-social ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    justify-content: center;
+    font-size: 2rem;
+
+  }
+  .f-about{
+    margin-left: 10rem;
+    text-decoration: none;
+    /* list-style: none; */
+  }
+  #cwithUs{
+    margin-left: 10rem;
+  }
+  
+  #Servic{
+    margin-left: 10rem;
+  }
+  #Link{
+    margin-left: 10rem;
+  }
+  .f-links li{
+    margin-left: 10rem;
+    /* text-decoration: none; */
+    list-style: none;
+  }
+  .f-services li{
+    margin-left: 10rem;
+    /* text-decoration: none; */
+    list-style: none;
+  }
+  .f-social li{
+    margin-left: 10rem;
+    /* text-decoration: none; */
+    list-style: none;
+  }
+
+  /*         MEDIA QUERIES  */
+  /*          _______________________ */
+
+  @media(max-width:85em){
+    .container{
+        max-width: 130rem;
+        padding: 0 0.3rem;
+    }
+    .navbar-list{
+        gap: 3.4rem;
+    }
+  }
+  @media(max-width:75em){
+    html{
+        font-size: 57%;
+
+    }
+    .container{
+        max-width: 110rem;
+    }
+    grid{
+        grid: 4.8rem;
+    }
+  }
+
+  @media (max-width:980px) {
+    .header{
+        position: relative;
+    }
+    .mobile-navbar-btn{
+        display: block;
+        z-index: 99999;
+        /* border: 3px solid #212529; */
+        color: #212529;
+    }
+    .mobile-nav-icon::before{
+        /* height width dena ha abhi */
+        color: #212529;
+    }
+    .header.logo{
+        width: 40%;
+    }
+    .navbar{
+        width: 100%;
+        /* vw or vh    shi ya percent  */
+        height: 60rem;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        background: lightblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 8rem;
+        /* margin-bottom: 40rem; */
+       transform: translateX(100%);
+       transition: all 0.5s linear;
+       opacity: 0;
+       visibility: hidden;
+       pointer-events: none;
+       z-index: 99;
+       /* background:; */
+       /* margin-left: 3rem; */
+    }
+.navbar-list{
+    flex-direction: column;
+    align-items: center;
+}
+.navbar .navbar-list .navbar-link:link,
+.navbar .navbar-list .navbar-link:visited{
+    color: #212529;
+    font-size: 3.2rem;
+}
+.active .navbar{
+    transform: translateX(0%);
+    
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.active  .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"]{
+    display: none;
+
+}
+
+.active  .mobile-navbar-btn .mobile-nav-icon[name="close-outline"]{
+    display:block;
+
+}
+
+
+      }
+      /*  for 60 em ke liye responsive nesss */
+
+
+
+      @media(max-width:52em){
+        .container{
+            max-width: 71rem;
+        }
+        .section-hero .grid-two-column{
+            grid-template-columns: 1fr;
+        }
+        
+        .section-Aboutus .grid-two-column{
+            grid-template-columns: 1fr;
+        }
+
+        .section-Aboutus .about-image{
+            grid-row:2;
+            margin-top: 3rem;
+            
+        }
+
+        .section-footer .f-about,
+        .section-footer .f-social{
+            grid-column: 1/-1;
+            
+        }
+        .f-about p{
+            margin-right: 15rem;
+        }
+
+
+
+        /* .coleadPicPart1 .grid-one-column { */
+            /* display: flex;
+            justify-content: space-evenly;
+            gap: 2rem;
+            margin-left: 5rem;
+         
+            margin-right: 5rem; */
+            /* grid-column: 1/-1; */
+        
+        /* } */
+/* 
+        .coleadPicPart1 {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 2rem;
+            margin-left: 5rem;
+            margin-right: 5rem;
+        
+        } */
+
+      }
+
+    @media(max-width:52em){
+
+        .Floatimage{
+      display: flex; 
+       flex-direction: column;
+      
+
+        }
+        
+       .p-btns{
+        /* display: none; */
+        flex-direction: column;
+       }
+       
+
+       .Advisorsof {
+        display: flex;
+        justify-content: center;
+        margin-left: 9rem;
+        flex-direction: column;
+    } 
+    
+
+.coleadPicPart1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: 9rem;
+    /* margin-right: rem; */
+
+}
+.nameCOleader{
+    display: flex;
+    justify-content: center;
+    margin-right: 3rem;
+    font-size: 2rem;
+    margin-right: 0.5rem;
+    /* font-size: 3rem; */
+
+}
+.name{
+    margin-left: 3rem;
+    font-size: 2rem;
+}
+.coleadP2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: 9rem;
+    /* margin-right: 5rem; */
+
+}
+
+.Advisorsof {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+} 
+
+.developers{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: 9rem;
+    /* margin-right: 5rem; */
+
+}
+#upEve{
+    font-size: 3rem;
+    margin-top:3rem;
+}
+.section-hero-data h1{
+font-size: 8rem;
+    }
+}

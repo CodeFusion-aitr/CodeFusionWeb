@@ -1,0 +1,28 @@
+        <div class="swiper mySwipera">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"> <img style=" border-radius: 0%; max-width: fit-content;" src="Eventone.jpg" alt="" id="Floatimage1"></div>
+                <div class="swiper-slide"> <img style=" border-radius: 0%; max-width: fit-content;" src="EventTwo.jpg" alt="" id="Floatimage1"></div>
+                <div class="swiper-slide"> <img style=" border-radius: 0%; max-width: fit-content;" src="Eventhree.jpg" alt="" id="Floatimage1"></div>
+                <div class="swiper-slide"> <img style=" border-radius: 0%; max-width: fit-content;" src="Eventone.jpg" alt="" id="Floatimage1"></div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+
+        <script>
+            var swiper = new Swiper(".mySwipera", {
+                slidesPerView: 1,
+                // centeredSlides: true,
+                spaceBetween: 30,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                autoplay:{
+                    delay:2500,
+                },
+                
+            });
+        </script>
+    
